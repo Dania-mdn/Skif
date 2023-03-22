@@ -7,12 +7,13 @@ public class Geton : MonoBehaviour
 {
     public float duration;
     bool istrun = false;
-    IEnumerator RotateCube()
+    public bool Face = true;
+    IEnumerator RotateCube(Quaternion Quaternion)
     {
         if (istrun)
         {
             Quaternion startRotation = transform.rotation;
-            Quaternion endRotation = startRotation * Quaternion.Euler(0, 180, 0);
+            Quaternion endRotation = startRotation * Quaternion;
             float elapsedTime = 0.0f;
 
             while (elapsedTime < duration)
@@ -22,7 +23,8 @@ public class Geton : MonoBehaviour
                 yield return null;
             }
 
-            transform.rotation = endRotation; istrun = false;
+            transform.rotation = endRotation; 
+            istrun = false;
         }
     }
     public void Turn()
@@ -30,7 +32,30 @@ public class Geton : MonoBehaviour
         if(istrun == false)
         {
             istrun = true;
-            StartCoroutine(RotateCube());
+            StartCoroutine(RotateCube(Quaternion.Euler(0, 180, -90)));
+            Face = !Face;
+        }
+    }
+    public void rotateRight()
+    {
+        if(istrun == false)
+        {
+            istrun = true;
+            if(Face)
+                StartCoroutine(RotateCube(Quaternion.Euler(0, 0, -90)));
+            else
+                StartCoroutine(RotateCube(Quaternion.Euler(0, 0,90)));
+        }
+    }
+    public void rotateLeft()
+    {
+        if(istrun == false)
+        {
+            istrun = true;
+            if (Face)
+                StartCoroutine(RotateCube(Quaternion.Euler(0, 0, 90)));
+            else
+                StartCoroutine(RotateCube(Quaternion.Euler(0, 0, -90)));
         }
     }
 }
