@@ -1,5 +1,4 @@
 using System.Collections;
-using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
 
@@ -20,15 +19,15 @@ public class Location : MonoBehaviour
     public ParticleSystem particle;
     private void OnEnable()
     {
-        EventManager.Delete += Delete;
-        EventManager.changeColor += ChacgeColor;
-        EventManager.changeColorBlack += ChacgeColorBlack;
+        EventManager.DeleteDembroidery += DeleteDembroidery;
+        EventManager.ChangeColorRB += ChacgeColor;
+        EventManager.ChangeColorBlack += ChacgeColorBlack;
     }
     private void OnDisable()
     {
-        EventManager.Delete -= Delete;
-        EventManager.changeColor -= ChacgeColor;
-        EventManager.changeColorBlack -= ChacgeColorBlack;
+        EventManager.DeleteDembroidery -= DeleteDembroidery;
+        EventManager.ChangeColorRB -= ChacgeColor;
+        EventManager.ChangeColorBlack -= ChacgeColorBlack;
     }
     private void Start()
     {
@@ -46,7 +45,7 @@ public class Location : MonoBehaviour
         _distanceValue = new float[StartPosition.Length];
         if (!_isHorizontal)
         {
-            _direction = new Vector2(-1, -1);
+            _direction = new Vector2( -1, -1);
             transform.position = new Vector3(transform.position.x, transform.position.y + PozitionZero.y + 0.08f / 2, transform.position.z);
         }
         else
@@ -93,6 +92,7 @@ public class Location : MonoBehaviour
             _hit = Physics2D.Raycast(StartPosition[i].position, _direction);
             if (_hit.collider != null)
             {
+                Debug.Log(_hit.collider.name);
                 _distanceValue[i] = Vector2.Distance(_hit.point, StartPosition[i].position);
                 if (_distanceValue[i] < 0.002f)
                 {
@@ -137,6 +137,7 @@ public class Location : MonoBehaviour
         else
         {
             y = _distanceValue.Min();
+            x = _distanceValue.Min();
         }
         transform.position = new Vector3(transform.position.x - x, transform.position.y - y, transform.position.z);
     }
@@ -151,7 +152,7 @@ public class Location : MonoBehaviour
         horizontalObject1.GetComponent<Location>().Color = Color;
         horizontalObject1.GetComponent<Location>().startCorutine();
     }
-    private void Delete()
+    private void DeleteDembroidery()
     {
         Destroy(this.gameObject);
     }

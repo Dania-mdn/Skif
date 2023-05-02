@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.44657844, g: 0.49641222, b: 0.5748171, a: 1}
+  m_IndirectSpecularColor: {r: 0.4469447, g: 0.4963348, b: 0.5730476, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -123,54 +123,6 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
---- !u!1 &87097437
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 87097439}
-  - component: {fileID: 87097438}
-  m_Layer: 0
-  m_Name: GameObject
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &87097438
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 87097437}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b282bceedccc8824fbf3fc652ca56bc6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  geton: {fileID: 1345355883}
-  Up: {fileID: 779943325}
-  duwn: {fileID: 1936702814}
-  face: 1
---- !u!4 &87097439
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 87097437}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 2.16, y: -6.12, z: -0.196064}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 6
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &161896997
 GameObject:
   m_ObjectHideFlags: 0
@@ -265,9 +217,8 @@ RectTransform:
   m_Children:
   - {fileID: 1051228920}
   - {fileID: 387051871}
-  - {fileID: 174941989}
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -286,7 +237,7 @@ GameObject:
   - component: {fileID: 174941991}
   - component: {fileID: 174941990}
   m_Layer: 5
-  m_Name: Text (TMP)
+  m_Name: PriceForCreate
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -299,17 +250,17 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 174941988}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 161897001}
-  m_RootOrder: 2
+  m_Father: {fileID: 387051871}
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -318.64, y: -538.32}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 209, y: 415}
   m_SizeDelta: {x: 367.13, y: 229.99}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &174941990
@@ -684,6 +635,7 @@ RectTransform:
   - {fileID: 1477495461}
   - {fileID: 779943325}
   - {fileID: 1936702814}
+  - {fileID: 174941989}
   m_Father: {fileID: 161897001}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1059,14 +1011,14 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 705507993}
-  m_LocalRotation: {x: 0.40821788, y: -0.23456968, z: 0.10938163, w: 0.8754261}
-  m_LocalPosition: {x: 0.16909999, y: 2.88, z: 0}
+  m_LocalRotation: {x: 0.3031487, y: -0.2806308, z: 0.19868958, w: 0.88874614}
+  m_LocalPosition: {x: 0.9, y: 4.14, z: -1.28}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
+  m_LocalEulerAnglesHint: {x: 40.569, y: -29.873, z: 13.942}
 --- !u!1 &777003707
 GameObject:
   m_ObjectHideFlags: 0
@@ -1253,8 +1205,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7c79bac4f3b496042a52610b498ee366, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  createWishiwanka: {fileID: 1702314388}
-  ID: 2
+  _gameManager: {fileID: 1702314388}
+  _numberOfInputFile: 2
 --- !u!65 &777003712
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1278,7 +1230,7 @@ GameObject:
   m_Component:
   - component: {fileID: 779943325}
   m_Layer: 5
-  m_Name: Up
+  m_Name: PositionInputUp
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1301,7 +1253,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -6}
+  m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &914123175
@@ -1370,7 +1322,7 @@ Camera:
   m_GameObject: {fileID: 963194225}
   m_Enabled: 1
   serializedVersion: 2
-  m_ClearFlags: 1
+  m_ClearFlags: 2
   m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
   m_projectionMatrixMode: 1
   m_GateFitMode: 2
@@ -1605,8 +1557,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7c79bac4f3b496042a52610b498ee366, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  createWishiwanka: {fileID: 1702314388}
-  ID: 0
+  _gameManager: {fileID: 1702314388}
+  _numberOfInputFile: 0
 --- !u!65 &982526887
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1866,7 +1818,7 @@ GameObject:
   - component: {fileID: 1051543376}
   - component: {fileID: 1051543375}
   m_Layer: 5
-  m_Name: ButtonRight
+  m_Name: TurnRight
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1937,8 +1889,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1345355883}
-        m_TargetAssemblyTypeName: Geton, Assembly-CSharp
-        m_MethodName: rotateLeft
+        m_TargetAssemblyTypeName: GetonRotation, Assembly-CSharp
+        m_MethodName: rotationRight
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -2147,8 +2099,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1122341055}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: -0.062222227, z: -0.48000023}
-  m_LocalScale: {x: 1.1968657, y: 1.1968657, z: 2.1543581}
+  m_LocalPosition: {x: 0, y: -0.07, z: -0.48000026}
+  m_LocalScale: {x: 1.3464738, y: 1.3464738, z: 2.1543581}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 683426315}
@@ -2238,7 +2190,7 @@ MonoBehaviour:
   - {fileID: 7769504460027381991, guid: c4896a992f37b52499bdd1eb4e0b2340, type: 3}
   - {fileID: 2505709963847102386, guid: cce0d17c5eebd7c40a7b051b597269d0, type: 3}
   - {fileID: 1824055941475310886, guid: 90eadb20f90999141bbe74dbd1c406cb, type: 3}
-  MyText: 
+  TextForCreateDembroidery: 
   BlackColor: {r: 0.028301895, g: 0.028301895, b: 0.028301895, a: 1}
   HorizontalColor: {r: 0, g: 0, b: 0, a: 1}
   DiagonalColor: {r: 0.9433962, g: 0.04004982, b: 0.04004982, a: 1}
@@ -2397,7 +2349,7 @@ GameObject:
   - component: {fileID: 1289937881}
   - component: {fileID: 1289937880}
   m_Layer: 5
-  m_Name: ChangeColor
+  m_Name: ChangeColorRB
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2729,7 +2681,7 @@ Transform:
   m_GameObject: {fileID: 1345355880}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0.028, z: 0}
-  m_LocalScale: {x: 0.45, y: 0.45, z: 0.44796667}
+  m_LocalScale: {x: 0.4, y: 0.4, z: 0.44796667}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1795605843}
@@ -2750,8 +2702,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fae974ab51f57f0479692dd95fdc0406, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  duration: 0.5
-  Face: 1
+  _duration: 1
 --- !u!1 &1407273621
 GameObject:
   m_ObjectHideFlags: 0
@@ -2817,7 +2768,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1477495460
 GameObject:
@@ -2833,7 +2784,7 @@ GameObject:
   - component: {fileID: 1477495462}
   - component: {fileID: 1477495465}
   m_Layer: 5
-  m_Name: InputField (TMP) (1)
+  m_Name: 'InputFieldText (TMP) '
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3008,10 +2959,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b282bceedccc8824fbf3fc652ca56bc6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  geton: {fileID: 1345355883}
-  Up: {fileID: 779943325}
-  duwn: {fileID: 1936702814}
-  face: 0
+  _getonGameObject: {fileID: 1345355883}
+  _positionUp: {fileID: 779943325}
+  _positionDuwn: {fileID: 1936702814}
+  _inputName: 1
 --- !u!1 &1490065165
 GameObject:
   m_ObjectHideFlags: 0
@@ -3181,7 +3132,7 @@ GameObject:
   - component: {fileID: 1499335125}
   - component: {fileID: 1499335124}
   m_Layer: 5
-  m_Name: InputField (TMP)
+  m_Name: InputFielDembroidery (TMP)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3369,7 +3320,7 @@ GameObject:
   - component: {fileID: 1509335882}
   - component: {fileID: 1509335881}
   m_Layer: 5
-  m_Name: Turn0
+  m_Name: Turn
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3442,30 +3393,6 @@ MonoBehaviour:
       - m_Target: {fileID: 1345355883}
         m_TargetAssemblyTypeName: Geton, Assembly-CSharp
         m_MethodName: Turn
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 2046085506}
-        m_TargetAssemblyTypeName: Move, Assembly-CSharp
-        m_MethodName: fg
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 1477495465}
-        m_TargetAssemblyTypeName: Move, Assembly-CSharp
-        m_MethodName: fg
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -3699,8 +3626,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7c79bac4f3b496042a52610b498ee366, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  createWishiwanka: {fileID: 1702314388}
-  ID: 3
+  _gameManager: {fileID: 1702314388}
+  _numberOfInputFile: 3
 --- !u!65 &1543688640
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -3791,7 +3718,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1549800113}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.07909999, y: -0.3, z: 1.45}
+  m_LocalPosition: {x: 0.07909999, y: -0.3, z: 1.18}
   m_LocalScale: {x: 0.6725154, y: 0.58737075, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -3984,8 +3911,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7c79bac4f3b496042a52610b498ee366, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  createWishiwanka: {fileID: 1702314388}
-  ID: 1
+  _gameManager: {fileID: 1702314388}
+  _numberOfInputFile: 1
 --- !u!65 &1611468896
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -4066,7 +3993,7 @@ GameObject:
   - component: {fileID: 1702314385}
   - component: {fileID: 1702314388}
   m_Layer: 5
-  m_Name: Button
+  m_Name: ButtonPrint
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4161,8 +4088,8 @@ MonoBehaviour:
           m_BoolArgument: 0
         m_CallState: 2
       - m_Target: {fileID: 1702314388}
-        m_TargetAssemblyTypeName: CreateWishiwanka, Assembly-CSharp
-        m_MethodName: Money
+        m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
+        m_MethodName: SetPriceForCreate
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -4222,18 +4149,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3e8e0e9afc00f7644a6f70e9228d530c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  money: {fileID: 174941990}
-  InputText: {fileID: 1119284084}
-  SpawnLiters: {fileID: 1122341057}
-  inputField: {fileID: 1499335124}
-  inputField1: {fileID: 1477495462}
-  InputText1:
+  _mainInputField: {fileID: 1499335124}
+  _createDembroidery: {fileID: 1122341057}
+  InputFieldText: {fileID: 1477495462}
+  TargetInputFieldText:
   - {fileID: 982526883}
   - {fileID: 1611468893}
   - {fileID: 777003709}
   - {fileID: 1543688637}
   - {fileID: 1736943629}
   - {fileID: 1958167712}
+  _priceForCreate: {fileID: 174941990}
 --- !u!1 &1736943627
 GameObject:
   m_ObjectHideFlags: 0
@@ -4420,8 +4346,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7c79bac4f3b496042a52610b498ee366, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  createWishiwanka: {fileID: 1702314388}
-  ID: 4
+  _gameManager: {fileID: 1702314388}
+  _numberOfInputFile: 4
 --- !u!65 &1736943632
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -4482,7 +4408,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1936702814}
   m_Layer: 5
-  m_Name: Duwn
+  m_Name: PositionInputDuwn
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4694,8 +4620,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7c79bac4f3b496042a52610b498ee366, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  createWishiwanka: {fileID: 1702314388}
-  ID: 5
+  _gameManager: {fileID: 1702314388}
+  _numberOfInputFile: 5
 --- !u!65 &1958167715
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -4722,7 +4648,7 @@ GameObject:
   - component: {fileID: 2006103909}
   - component: {fileID: 2006103908}
   m_Layer: 5
-  m_Name: ButtonLeft
+  m_Name: TurnLeft
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4793,8 +4719,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1345355883}
-        m_TargetAssemblyTypeName: Geton, Assembly-CSharp
-        m_MethodName: rotateRight
+        m_TargetAssemblyTypeName: GetonRotation, Assembly-CSharp
+        m_MethodName: rotationLeft
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -4853,7 +4779,7 @@ GameObject:
   - component: {fileID: 2046085505}
   - component: {fileID: 2046085506}
   m_Layer: 5
-  m_Name: Main
+  m_Name: MainInput
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4893,10 +4819,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b282bceedccc8824fbf3fc652ca56bc6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  geton: {fileID: 1345355883}
-  Up: {fileID: 779943325}
-  duwn: {fileID: 1936702814}
-  face: 1
+  _getonGameObject: {fileID: 1345355883}
+  _positionUp: {fileID: 779943325}
+  _positionDuwn: {fileID: 1936702814}
+  _inputName: 0
 --- !u!1 &2536192826965557456
 GameObject:
   m_ObjectHideFlags: 0

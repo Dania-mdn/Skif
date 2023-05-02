@@ -1,19 +1,17 @@
-using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
 
-public class SpawnChar : MonoBehaviour
+public class CreateDembroidery : MonoBehaviour
 {
     public GameObject StartObject;
     public Transform StartHorizontalConnect;
     public Transform StartDiagonalConnect;
     [SerializeField] private GameObject[] _litersHorizontal;
     [SerializeField] private GameObject[] _litersDiagonal;
-    private Transform _parentTransform;
     private bool _isHorisontal = true;
     private Dictionary<char, int> _dictionary;
-    public string MyText;
+    public string TextForCreateDembroidery;
     private int i = 0;
     private char[] WriteChar;
     private bool isCreate = false;
@@ -34,8 +32,6 @@ public class SpawnChar : MonoBehaviour
     }
     private void Start()
     {
-        _parentTransform = GetComponent<Transform>();
-
         _dictionary = new Dictionary<char, int>
         {
             { 'à', 0}, { 'á', 1}, { 'â', 2}, { 'ã', 3}, { '´', 4},
@@ -84,7 +80,7 @@ public class SpawnChar : MonoBehaviour
     }
     public void CangeColor()
     {
-        EventManager.DoChangeColor(HorizontalColor, DiagonalColor);
+        EventManager.DoChangeColorRB(HorizontalColor, DiagonalColor);
     }
     public void CangeColorBlak()
     {
@@ -92,7 +88,7 @@ public class SpawnChar : MonoBehaviour
     }
     public void MyTextHandler()
     {
-        WriteChar = MyText.ToCharArray();
+        WriteChar = TextForCreateDembroidery.ToCharArray();
         isCreate = true;
     }
     public void SetCreate()

@@ -1,15 +1,14 @@
 using System;
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
-public class EventManager : MonoBehaviour
+public class EventManager
 {
     public static event Action Create;
     public static event Action CreateFalse;
-    public static event Action Delete;
-    public static event Action<Color, Color> changeColor;
-    public static event Action<Color> changeColorBlack;
+    public static event Action DeleteDembroidery;
+    public static event Action<bool> Turn;
+    public static event Action<Color, Color> ChangeColorRB;
+    public static event Action<Color> ChangeColorBlack; 
     public static void DoCreate()
     {
         Create?.Invoke();
@@ -20,14 +19,18 @@ public class EventManager : MonoBehaviour
     }
     public static void DoDelete()
     {
-        Delete?.Invoke();
+        DeleteDembroidery?.Invoke();
     }
-    public static void DoChangeColor(Color ColorHorizontal, Color ColorDiagonal)
+    public static void DoTurn(bool isTurn)
     {
-        changeColor?.Invoke(ColorHorizontal, ColorDiagonal);
+        Turn?.Invoke(isTurn);
+    }
+    public static void DoChangeColorRB(Color ColorRed, Color ColorBlack)
+    {
+        ChangeColorRB?.Invoke(ColorRed, ColorBlack);
     }
     public static void DochangeColorBlack(Color ColorBlack)
     {
-        changeColorBlack?.Invoke(ColorBlack);
+        ChangeColorBlack?.Invoke(ColorBlack);
     }
 }
