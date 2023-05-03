@@ -137,7 +137,6 @@ public class Location : MonoBehaviour
         else
         {
             y = _distanceValue.Min();
-            x = _distanceValue.Min();
         }
         transform.position = new Vector3(transform.position.x - x, transform.position.y - y, transform.position.z);
     }
